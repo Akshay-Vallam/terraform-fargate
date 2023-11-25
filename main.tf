@@ -20,8 +20,8 @@ resource "aws_ecs_task_definition" "task" {
   container_definitions = jsonencode(
       [
           {
-              "name" : "first",
-              "image" : 915270456781.dkr.ecr.ap-southeast-2.amazonaws.com/nodejs:latest,
+              "name" : "latest",
+              "image" : "915270456781.dkr.ecr.ap-southeast-2.amazonaws.com/nodejs:latest",
               "essential" : true,
               "portMappings" : [
                   {
